@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddd;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 40rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+}
+
+.left {
+    background-color: #2874f0;
+    padding: 3rem 2rem;
+    background-repeat: no-repeat;
+    background-position: center 85%;
+}
+
+.img{
+    width: 200px;
+    height:200px;
+    margin-top: 100px;
+}
+
+.right {
+    padding: 3rem 2rem 1.8rem;
+}
+
+.heading {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.heading__desc {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input {
+    padding: 0.5rem 0;
+    border: none;
+    border-bottom: 1px solid #878787;
+    width: 100%;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+.input:placeholder {
+    visibility: hidden;
+}
+
+.label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #878787;
+    pointer-events: none;
+    transform-origin: left;
+    transition: transform 0.2s ease;
+}
+
+.input:focus ~ .label,
+.input:not(:placeholder-shown) ~ .label {
+    transform: translateY(-130%) scale(0.8);
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #2874f0;
+    transform: scale(0);
+}
+
+.input:focus ~ .line,
+.input:not(:placeholder-shown) ~ .line {
+    transform: scaleX(1);
+}
+
+a {
+    text-decoration: none;
+    color: #2874f0;
+}
+
+.input-group .link {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-group .link:hover {
+    text-decoration: underline;
+}
+
+.para {
+    font-size: 0.75rem;
+    margin-top: 2rem;
+    color: #878787;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    background-color: #fb641b;
+    padding: 1rem;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 1.025rem;
+}
+
+.para--or {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.8rem 0;
+}
+
+.btn--white {
+    color: #2874f0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 0;
+}
+
+.bottom {
+    text-align: center;
+}
+
+.link--bottom {
+    display: inline-block;
+    margin-top: 5rem;
+}
